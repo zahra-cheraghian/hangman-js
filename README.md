@@ -1,5 +1,5 @@
 # hangman-js
-
+![hangman1](https://github.com/zahra-cheraghian/hangman-js/assets/155820127/49e132ab-281d-4180-afe8-1c42cf96853b)
 - [Demo Project](https://zahra-cheraghian.github.io/hangman-js/)
 - Developed by zahracheraghian
 
