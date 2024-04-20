@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(../img/vecteezy_dark-abstract-winter-forest-background-wooden-floor-snow_22874789.jpg);
+    background-size: cover;
+    text-decoration: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 7px 7px rgb(95, 94, 94);
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(wheat, red);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 2% 2% 2% 2% / 4% 4% 4% 4%;
+    display: none;
+    z-index: 10;
+    >img {
+        width: 100px;
+        height: 100px;
+    }
+
+    >hgroup {
+        width: 100%;
+
+        >h2,
+        >p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        >h2 {
+            text-transform: capitalize;
+            font-family: "Creepster", system-ui;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        >p {
+            font-size: 18px;
+        }
+    }
+
+    >button {
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 600;
+        background-color: rgb(245, 192, 179);
+        background-color: rgba(0, 0, 0, 0.784);
+        color: rgb(235, 218, 218);
+        outline: none;
+        border: none;
+        border-radius: 5%;
+    }
+}
+
+.container {
+    width: 60%;
+    min-height: 450px;
+    background: linear-gradient(rgba(255, 0, 0, 0.537), rgba(0, 0, 0, 0.422));
+    border-radius: 2% 2% 2% 2% / 4% 4% 4% 4%;
+    display: flex;
+    align-items: center;
+
+    >.hang-box {
+        width: 38%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+
+    }
+
+    >.game-box {
+        width: 62%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 40px;
+
+        >#word,
+        >hgroup,
+        >.keyboard {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+        }
+        >#word {
+            align-items: center;
+            >li {
+                list-style-type: none;
+                margin: 5px;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                text-transform: uppercase;
+                width: 28px;
+            border-bottom: 2px solid white;
+            }
+        }
+        >hgroup {
+            text-transform: capitalize;
+            flex-wrap: wrap;
+
+            >h4 {
+                width: 100%;
+                margin: 10px;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        >.keyboard {
+            flex-wrap: wrap;
+            padding: 10px 0;
+
+            >button {
+                background: linear-gradient(40deg, black, red);
+                box-shadow: 2px 2px 2px rgb(84, 83, 83);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 15%;
+                border: 1px solid #000;
+                margin: 5px;
+                color: white;
+                background-color: red;
+                text-shadow: 2px 2px 2px black;
+                cursor: pointer !important;
+                text-transform: uppercase;
+                
+                &:disabled {
+                    pointer-events: none;
+                    opacity: 0.6;
+                }
+                &:hover{
+                    background: linear-gradient(40deg, red,red);
+                }
+            }
+        }
+    }
+}
